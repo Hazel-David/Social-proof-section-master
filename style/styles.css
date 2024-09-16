@@ -1,0 +1,104 @@
+:root{
+--Very-Dark-Magenta: hsl(300, 43%, 22%);
+--Soft-Pink: hsl(333, 80%, 67%);
+--Dark-Grayish-Magenta: hsl(303, 10%, 53%);
+--Light-Grayish-Magenta: hsl(300, 24%, 96%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan';
+}
+body{
+    background-color: var(--White);
+    background: url(/social-proof-section-master/images/bg-pattern-top-desktop.svg) right 20vw bottom 30vh no-repeat,url(/social-proof-section-master/images/bg-pattern-bottom-desktop.svg)left 1vw top 10vh no-repeat;
+    background-size: cover,cover;
+    min-height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+}
+p{
+    font-size: 15px;
+}
+.pr{
+    color: var(--Very-Dark-Magenta);
+}
+h1{
+    color: var(--Very-Dark-Magenta) !important;
+    margin-bottom: .5rem !important;
+    font-weight: 900 !important;
+    
+}
+.rate-text{
+    margin-bottom: 0;
+    margin-top: 2px;
+    font-weight: 900;
+    color: var(--Very-Dark-Magenta);
+}
+.rating{
+    background-color: var(--Light-Grayish-Magenta);
+}
+.rating-box > div:nth-child(1) {
+    margin-right: 10rem;
+}
+.rating-box > div:nth-child(2) {
+    margin-right: 5rem;
+}
+.testimonial{
+    background-color: var(--Very-Dark-Magenta) !important;
+}
+.profile-picture{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.name,.verified{
+    margin-bottom: 0;
+    font-weight: 700;
+}
+.name{
+    color: var(--White);
+}
+.verified{
+    color: var(--Soft-Pink);
+}
+.testimony{
+    color: var(--White);
+}
+
+@media screen and (max-width:900px){
+    .rating-box > div:nth-child(1) {
+        margin-right: 3rem;
+    }
+    .rating-box > div:nth-child(2) {
+        margin-right: 2rem;
+    }
+}
+@media screen and (max-width:576px){
+    body{
+        background: url(/social-proof-section-master/images/bg-pattern-top-mobile.svg) right 2vw bottom 70vh no-repeat,url(/social-proof-section-master/images/bg-pattern-bottom-mobile.svg) left 1vw top 60vh no-repeat;
+        
+    }
+    h1{
+        width: 60%;
+        margin: auto;
+    }
+    .rating-box > div:nth-child(1) {
+        margin-right: 0rem;
+    }
+    .rating-box > div:nth-child(2) {
+        margin-right: 0rem;
+    }
+    .rating{
+        width: 100%;
+        text-align: center;
+    }
+    
+   
+}
